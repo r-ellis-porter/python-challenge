@@ -1,6 +1,6 @@
 # python-challenge
 
-This Python script was written by me based on the material we covered in class and my askBCS session with CJ Campbell.
+This Python script was written by me based on the material we covered in class. CJ Campbell taught me how to concatenate iterated strings from a list using += and for loop in an askBCS session.
 
 This repository has two projects: PyBank and PyPoll. 
 
