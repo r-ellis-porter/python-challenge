@@ -41,6 +41,8 @@ for i in candidates:
         count = 1
         results = []
         prev_row = i
+
+# final candidate in list
 results.append(count)
 results.append(format(count/len(candidates), ".3%"))
 all_results.append(results)
@@ -53,20 +55,17 @@ if count > top_votes:
 
 total_votes = len(candidates)
 
-# format results
+# create and format results list of strings
 
-election_results = ("\n"
-"Election Results \n"
-"---------------------------\n"
-f"Total Votes: {total_votes}\n"
-"---------------------------\n"
-f"{all_results[0][0]}: {all_results[0][2]} ({all_results[0][1]})\n"                  
-f"{all_results[1][0]}: {all_results[1][2]} ({all_results[1][1]})\n"
-f"{all_results[2][0]}: {all_results[2][2]} ({all_results[2][1]})\n"
-"---------------------------\n" 
-f"Winner: {winner}\n"
-"---------------------------"                  
-)
+election_results = "\nElection Results\n" + "-" * 25 + "\n"
+election_results += f"Total Votes: {total_votes}\n" + "-" * 25 + "\n"
+for info in all_results:
+    name, percentage, total = info
+    election_results += f"{name}: {total} ({percentage})\n"
+election_results += "-" * 25 + "\n"
+election_results += f"Winner: {winner}\n"
+election_results += "-" * 25
+
 print(election_results)
 
 # write results to .txt
