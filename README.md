@@ -1,6 +1,6 @@
 # python-challenge
 
-This Python script was written by me based on the material we covered in class.
+This Python script was written by me based on the material we covered in class and my askBCS session with CJ Campbell.
 
 This repository has two projects: PyBank and PyPoll. 
 
